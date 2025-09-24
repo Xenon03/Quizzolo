@@ -1,0 +1,124 @@
+/* ==== Reset di base ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==== Stile generale ==== */
+body {
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+    min-height: 100vh;
+    padding: 30px;
+
+    /* Flex per centrare il contenuto al centro della pagina */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ==== Container principale ==== */
+.container {
+    display: flex;
+    flex-direction: column; /* Tutto disposto verticalmente */
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== Titoli ==== */
+.container h1 {
+    font-size: 2rem;
+    color: #2a4d69;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 1.4rem;
+    color: #4a6fa5;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ==== Fieldset ==== */
+fieldset {
+    border: 2px solid #87bfff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #f7fbff;
+    width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    color: #2a4d69;
+    font-size: 1rem;
+    padding: 0 8px;
+}
+
+/* ==== Radio button e label ==== */
+fieldset label {
+    display: flex;              /* allinea input e testo sulla stessa riga */
+    align-items: center;        /* centra verticalmente */
+    gap: 8px;                   /* spazio tra radio e testo */
+    font-size: 1rem;
+    color: #444;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+fieldset input[type="radio"] {
+    display: flex;
+    margin: 0;                  /* rimuove margini predefiniti */
+    transform: scale(1.1);      /* ingrandisce leggermente il radio per estetica */
+    accent-color: #4a90e2;      /* colore personalizzato (browser moderni) */
+}
+
+/* ==== Select menu ==== */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    transition: border 0.3s;
+}
+
+select:focus {
+    border-color: #87bfff;
+    outline: none;
+}
+
+/* ==== Pulsante di invio ==== */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #357abd, #2a5d9f);
+}
+
+/* ==== Hover sugli elementi ==== */
+option:hover {
+    background-color: #eaf4ff;
+}

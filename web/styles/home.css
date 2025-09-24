@@ -1,0 +1,118 @@
+/* Layout principale: due colonne */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Spazio tra form e storico */
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Box contenitore generico */
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Titoli */
+.container h1, .container h2, .container h3 {
+    color: #2a4d69;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #87bfff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f7fbff;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0 8px;
+    color: #2a4d69;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+fieldset input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* Select */
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Pulsante */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #357abd, #2a5d9f);
+}
+
+/* ===== Storico sfide ===== */
+.storico {
+    max-width: 400px;
+}
+
+.storico-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.storico-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background: #f9fafc;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.storico-item:hover {
+    background: #eaf4ff;
+    transform: translateY(-3px);
+}
+
+.storico-item p {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.no-storico {
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+}
